@@ -1,9 +1,55 @@
 <html>
-    <head>
-       <link href="./style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <h1>initial setup</h1>
-        <img src="./images/✌️.png" alt="peace sign" />
-    </body>
+
+<head>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./style-extra.css" rel="stylesheet" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.cursor = 'progress';
+            setTimeout(() => {
+                document.body.style.cursor = 'auto';
+            }, 2000);
+        });
+    </script>
+</head>
+
+<body>
+    <h1>React example1234</h1>
+    <div id="react-root" ></div>
+    <main class="flex flex-col gap-20 px-4">
+        <nav class="text-xl uppercase flex flex-row gap-4 p-2 items-center">
+            <a href="#">Hi!</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a class="bg-[#332EAC] text-white px-4 py-2 rounded-md" href="#">Let's talk!</a>
+        </nav>
+        <div class="flex flex-col-reverse md:flex-row gap-8">
+            <div class="text-2xl font-normal leading-relaxed flex flex-col justify-center">
+                <div class="flex flex-col gap-8">
+                    <p>
+                        Hi, I'm Kotja,
+                        a designer with nearly five years of experience crafting
+                        intuitive digital experiences.
+                    </p>
+                    <p>
+                        I specialise in creating
+                        simple, effective solutions for both&nbsp;b2b&nbsp;&amp;&nbsp;b2c
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center">
+                <img class="hithere h-[30vh] md:h-[40vh] max-w-[unset]" src="https://kotja.design/images/898b9638dbe802ab032114689a4a0a1b.png"
+                    alt="peace sign" />
+            </div>
+        </div>
+        <div class="flex flex-row justify-between">
+            <div class="tileplaceholder"></div>
+            <div class="tileplaceholder"></div>
+            <div class="tileplaceholder"></div>
+            <div class="tileplaceholder"></div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
 </html>
