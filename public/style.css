@@ -676,8 +676,13 @@ video {
 }
 
 body {
+  /*
+
+
+
   background-image: url("./images/background2.svg"), url("./images/background.svg");
   background-size: cover;
+  */
 }
 
 @font-face {
@@ -750,7 +755,15 @@ main {
   width: 1em;
   height: 21em;
   display: inline-block;
-  background-color: rgb(12, 188, 170);
+  background-color: turquoise;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 @media (min-width: 768px) {
